@@ -4,7 +4,7 @@ const uploadFile = require("./services/storage.service");
 const postModel = require("./models/post.model.js");
 
 const app = express()
-app.use(express.json()); //raw 
+app.use(express.json()); //raw data
 const upload = multer({storage: multer.memoryStorage()}) //file 
 
 
